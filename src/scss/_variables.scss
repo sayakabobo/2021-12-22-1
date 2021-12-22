@@ -1,0 +1,13 @@
+$font_color: #333333;
+$yellow_color: #fde000;
+$white_color: #ffffff;
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

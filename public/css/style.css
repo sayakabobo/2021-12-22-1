@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  color: #333333;
+  font-size: 1rem;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #333333;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.sidebar {
+  position: fixed;
+  width: 300px;
+}
+
+.container {
+  margin-left: 300px;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.logo {
+  width: 200px;
+  margin-bottom: 30px;
+  line-height: 1px;
+}
+.logo a {
+  display: block;
+}
+
+.sec-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  font-size: 1.75rem;
+  text-align: center;
+}
+.sec-title::before, .sec-title::after {
+  width: 28%;
+  border-top: 1px solid;
+  content: "";
+}
+
+/*-------------------------------------------
+header
+-------------------------------------------*/
+#header {
+  top: 0;
+  width: 300px;
+  height: auto;
+  padding: 40px 50px 30px 45px;
+  overflow-y: auto;
+}
+#header .navigation ul {
+  margin-bottom: 60px;
+}
+#header .navigation ul li {
+  padding: 8px 0;
+  font-size: 0.875rem;
+}
+
+/*-------------------------------------------
+video
+-------------------------------------------*/
+#video {
+  width: 100%;
+  height: 100vh;
+}
+#video .bg-video {
+  z-index: -100;
+  position: fixed;
+  top: -220px;
+}
+
+/*-------------------------------------------
+project
+-------------------------------------------*/
+#project {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+  color: #ffffff;
+}
+#project ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#project ul li {
+  position: relative;
+  width: 47%;
+  margin-bottom: 50px;
+  border: 1px solid #ffffff;
+}
+#project ul li:last-child, #project ul li:nth-last-child(2) {
+  margin-bottom: 0;
+}
+#project ul li a {
+  display: block;
+}
+#project ul li a::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 -30px 15px -1px #2e2e2e inset;
+  content: "";
+}
+#project ul li a .name {
+  z-index: 5;
+  position: absolute;
+  bottom: 4px;
+  left: 7px;
+  color: #ffffff;
+  font-size: 0.75rem;
+}
+
+/*-------------------------------------------
+feature
+-------------------------------------------*/
+#feature {
+  padding-bottom: 80px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+}
+#feature .list {
+  display: flex;
+  justify-content: space-between;
+}
+#feature .list li {
+  width: 30%;
+  font-size: 0.875rem;
+  text-align: center;
+}
+#feature .list a {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: calc(50% - 11px) 0;
+  overflow: hidden;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  color: #ffffff;
+  text-align: center;
+}
+#feature .list a:hover::before {
+  left: 0;
+}
+#feature .list a::before {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  content: "";
+  opacity: 0.3;
+  transition: 0.5s;
+}
+#feature .list .title {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/*-------------------------------------------
+flow
+-------------------------------------------*/
+#flow {
+  padding-top: 40px;
+  background: #ffffff;
+}
+#flow .inner {
+  display: flex;
+  margin-top: 60px;
+}
+#flow .inner .figure {
+  position: relative;
+}
+#flow .inner .figure::before {
+  position: absolute;
+  top: 0;
+  left: 75px;
+  width: 50px;
+  height: 600px;
+  background: #fde000;
+  content: "";
+}
+#flow .inner .figure li {
+  position: relative;
+  width: 200px;
+  height: 80px;
+  margin-bottom: 60px;
+  background: #333333;
+  color: #ffffff;
+  line-height: 80px;
+  text-align: center;
+}
+#flow .inner .figure li::before {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  border-top: 30px solid #333333;
+  border-right: 100px solid transparent;
+  border-left: 100px solid transparent;
+  content: "";
+}
+#flow .inner .figure li:last-child {
+  margin-bottom: 0;
+}
+#flow .inner .description {
+  margin-left: 10%;
+}
+#flow .inner .description dt {
+  position: relative;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #333333;
+  font-size: 1.25rem;
+}
+#flow .inner .description dt span {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -45px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #333333;
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 35px;
+  text-align: center;
+}
+#flow .inner .description dd {
+  margin-bottom: 43px;
+}
+#flow .inner .description dd:last-child {
+  margin-bottom: 0;
+}
+
+/*-------------------------------------------
+contact
+-------------------------------------------*/
+#contact {
+  padding-bottom: 80px;
+  background: #ffffff;
+}
+#contact .inner {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+#contact .inner .item {
+  display: block;
+  position: relative;
+  width: 30%;
+  padding: 50px 0;
+  border: 1px solid #333333;
+  font-size: 0.875rem;
+  text-align: center;
+  transition: 0.1s;
+}
+#contact .inner .item:hover {
+  border: 2px solid #333333;
+}
+#contact .inner .item::before {
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  border-top: 20px solid transparent;
+  border-right: 20px solid #333333;
+  content: "";
+}
+#contact .inner .item img {
+  margin-bottom: 5px;
+}
+
+/*-------------------------------------------
+footer
+-------------------------------------------*/
+#footer {
+  padding: 20px 0;
+  background: #333333;
+  color: #ffffff;
+}
+#footer .menu {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 60px 0;
+}
+#footer .menu li {
+  padding: 0 20px;
+  border-right: 1px solid #ffffff;
+  font-size: 0.875rem;
+}
+#footer .menu li:last-child {
+  border-right: none;
+}
+#footer .menu li a {
+  color: #ffffff;
+}
+#footer .copyright {
+  font-size: 0.65rem;
+  text-align: center;
+}
+/*# sourceMappingURL=maps/style.css.map */
