@@ -8,27 +8,37 @@
     <link rel="stylesheet" href="./public/css/style.css" />
     <title>明るいHOUSE</title>
   </head>
+
   <body>
-    <header id="header" class="sidebar">
+    <header id="header">
       <h1 class="logo">
         <a href="#"><img src="./img/logo.svg" alt="logo" /></a>
       </h1>
-      <nav class="navigation">
-        <ul>
-          <li><a href="#">私たちについて</a></li>
-          <li><a href="#">サービス</a></li>
-          <li><a href="#">商品情報</a></li>
-          <li><a href="#">展示会</a></li>
-          <li><a href="#">暮らしの日記</a></li>
-          <li><a href="#">会社概要</a></li>
+      <nav id="navigation">
+        <ul class="nav-menu">
+          <li><a class="menu" href="#">私たちについて</a></li>
+          <li><a class="menu" href="#">サービス</a></li>
+          <li><a class="menu" href="#">商品情報</a></li>
+          <li><a class="menu" href="#">展示会</a></li>
+          <li><a class="menu" href="#">暮らしの日記</a></li>
+          <li><a class="menu" href="#">会社概要</a></li>
         </ul>
-        <ul>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">facebook</a></li>
-          <li><a href="#">instagram</a></li>
+        <ul class="nav-sns">
+          <li><a class="menu" href="#">Twitter</a></li>
+          <li><a class="menu" href="#">facebook</a></li>
+          <li><a class="menu" href="#">instagram</a></li>
         </ul>
       </nav>
+
+      <div id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div id="mask"></div>
     </header>
+
     <div class="container">
       <main>
         <div id="video">
@@ -169,6 +179,8 @@
       </main>
 
       <footer id="footer">
+        <a id="to-top" href=""></a>
+
         <ul class="menu">
           <li><a href="#">私たちについて</a></li>
           <li><a href="#">サービス</a></li>
@@ -182,5 +194,7 @@
         </p>
       </footer>
     </div>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
